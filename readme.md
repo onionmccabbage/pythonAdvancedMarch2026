@@ -1,5 +1,107 @@
-Python Advanced
+## Python Advanced
 
-March 2026
+#### 23-26 March 2026
 
 Toby Dussek
+
+You will need:
+- Python 3.x
+- an editor (e.g. VS Code, PyCharm etc.)
+- internet, with permission to install python libraries (e.g. requests library)
+
+Python code lives in classes (or in functions), in modules, which live in packages (folders)
+
+*  9:30 start
+* 11:00 break (15 mins)
+* 12:30 lunch (1 hr)
+* 3:00 break (15 minutes)
+*  4:30 end
+
+Course Repo https://github.com/onionmccabbage/pythonAdvancedMarch2026
+
+Monday
+- intro and welcome
+  - what you currently know
+  - what you want to know 
+- abstract and concrete classes
+- class inheritance
+- using slots
+- Anything __nnn__ is a built in feature of Python. Called 'dunder'
+- name-mangled members
+- can we actually access __nnn properties
+- property decorators
+- validate data types: isinstance, type, int(float())
+- override built-in methods: __str__, __repr__, __eq__ etc.
+- if __name__== '__main__'
+- how to load a relative file path
+- using sys.path
+- after lunch review: build class(es) with properties and methods
+- functional programming: map, filter and reduce  
+- function parameters: args, kwargs
+
+Tuesday
+- how to accessing the recordings
+- loading remote API data (requests)
+- processing text/json
+- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+- 'with' operator for clean handling of assets
+- how to convert bytes back to string: b'this is bytes'.decode()
+- Remember - in Python EVERYTHING is an OBJECT
+- databases and SQL
+    see https://wiki.python.org/moin/DatabaseProgramming
+- also useful: add 'sqlite viewer' plugin to VSCode
+- overview of other db connections
+- see SQL tutorial https://www.w3schools.com/sql/
+- Create, Read and Update (and Delete) - CRUD operations
+- populate db with sample data
+- read and nicely format values from the db
+- after lunch review exercise
+
+Wednesday
+- comprehensions, generators and yield
+- i/o bound means any program which relies on external assets (print, input....)
+- python includes stdin and stdout
+- redirect stdout
+- context manager to switch context e.g. for handling data input and output
+- networking server/client (microservices)
+- immediate-mode Python
+- Testing: (only really works if there is a good spec')
+  - doctest revisited
+  see https://docs.python.org/3/library/doctest.html
+  - unittest see https://docs.python.org/3/library/unittest.html
+  - pytest see https://docs.pytest.org/
+- after lunch lab exercise
+- Flask is a lightweight web server
+  (django is a full-fat web server)
+
+Thursday
+- profiling: timings etc. (cProfile)
+  to use cProfile we write this:
+     python -m cProfile -o prof_out using_api.py
+- debug
+- classes include several really useful methods we may override:
+  __init__, __str__, __repr__, __enter__, __exit__, __run__, __call__
+- multithreading, also limits of mutlithreading concurrency
+  - class and function threads
+  - how threads are done
+  - concurrency and resources (lock shared resources)
+  - async await
+  in Python we do not get true parallelism ...
+- the global Interpreter Lock (GIL)
+- Python 3.13 contains an optional GIL
+  see https://peps.python.org/pep-0703/
+- using thread locks
+- Python has -O to optimize code (especially useful for threading and large code-base)
+- after lunch review
+- async server and client for microservices
+- Numpy and Pandas are written in c so they avoid the GIL
+- the next course covers:
+  - design patterns
+  - extend threading and also multiprocessing
+  - Numpy, Pandas and Data Analysis
+
+where to go from here:
+- use Python
+- work through the tutorials and exercises learnpython.org and pynative
+
+End of course feedback 
