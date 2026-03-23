@@ -26,3 +26,4 @@ if __name__ == '__main__':
     f1.num_sides = 99
     print(f3.num_sides, f3.colour, f1.num_sides)
     print(Figure.howMany())  # 3
+
