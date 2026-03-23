@@ -21,12 +21,19 @@ class Shape(AbstractShape): # NB by default everything in Python is an Object
         else:
             raise TypeError('Number of sides must be a positive integer')
 
-    # @property
+    @property
     def colour(self):
-        return self.__colour
+        return self.__colour # this is the colour 'getter'
+    @colour.setter
+    def colour(self, new_col):
+        '''Validate that the colour is a non-empty string'''
+        if type(new_col) == str and len(new_col)>0:
+            self.__colour = new_col # set the name-mangled property to the valid value
+        else:
+            raise TypeError('Colour must be a non empty string')
     
 
 if __name__ == '__main__':
-    # make instances
+    # make instances 
     s1 = Shape(3, 'blue')
     print(s1.num_sides) # calls the getter method for __num_sides
