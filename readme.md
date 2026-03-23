@@ -58,7 +58,7 @@ Tuesday
 - Create, Read and Update (and Delete) - CRUD operations
 - populate db with sample data
 - read and nicely format values from the db
-- after lunch review exercise
+- after lunch review exercise (at least an hour)
 
 Wednesday
 - comprehensions, generators and yield
