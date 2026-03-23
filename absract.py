@@ -5,6 +5,7 @@ from abc import ABCMeta, abstractmethod
 class AbstractShape(metaclass=ABCMeta):
     '''Here we declare methods and properties that need to be included in
     classes derived from this abtract class'''
+    __slots__ = ('__num_sides', '__colour')
     @abstractmethod # an ABC can enforce the implementation of methods
     def num_sides(self):
         pass # we do not write any implementation

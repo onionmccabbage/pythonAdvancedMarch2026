@@ -4,6 +4,8 @@ from absract import AbstractShape
 # We do not have to use abstraction to make classes
 # but if we do, we may enforce features of the class
 class Shape(AbstractShape): # NB by default everything in Python is an Object
+    # we may choose to declare permitted slots for this class
+    __slots__ = ('__num_sides', '__colour')
     '''We must implement what the Abstract class enforces'''
     def __init__(self, sides, col): # we choose to pass in arguments
         # the __init__ will be executed once, when any instance is created
@@ -20,7 +22,6 @@ class Shape(AbstractShape): # NB by default everything in Python is an Object
             self.__num_sides = new_sides
         else:
             raise TypeError('Number of sides must be a positive integer')
-
     @property
     def colour(self):
         return self.__colour # this is the colour 'getter'
@@ -37,3 +38,11 @@ if __name__ == '__main__':
     # make instances 
     s1 = Shape(3, 'blue')
     print(s1.num_sides) # calls the getter method for __num_sides
+    print(s1.colour)    # calls the getter method for __colour
+    # exercise the exceptions
+    s2 = Shape(9, 'red')
+    # we may try to use a __ property (we should avoid this from happening)
+    # this is permitted unless we declare the __slots__ of this class
+    s1.__colour = 'cerise' # here we are assigning an additional arbitrary property to the s1 instance
+    print(s1.__colour) # oops
+    print(s1.colour)
