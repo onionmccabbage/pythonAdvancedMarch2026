@@ -32,11 +32,26 @@ class Shape(AbstractShape): # NB by default everything in Python is an Object
             self.__colour = new_col # set the name-mangled property to the valid value
         else:
             raise TypeError('Colour must be a non empty string')
-    
+    def __str__(self):
+        '''The __str__ method exists on ALL objects
+        It is used by the print function to determine how to output an object'''
+        # a python formatted string lets us inject values like this
+        return f'This shape has {self.num_sides} sides and is {self.colour}'
+    def __repr__(self):
+        '''This method is used in immediate mode python'''
+        return f'Here we have a {self.colour} shape with {self.num_sides} sides'
+
+# Anything with pre and post underscores is a built in part of python
+# __init__ is built in to python object
+# __main__ and __name__ are part of python  
+# These are referred to as 'dunder' meaning double-underscores
+
+
 
 if __name__ == '__main__':
     # make instances 
     s1 = Shape(3, 'blue')
+    print(s1) # this will invoke __str__
     print(s1.num_sides) # calls the getter method for __num_sides
     print(s1.colour)    # calls the getter method for __colour
     # exercise the exceptions
