@@ -43,6 +43,10 @@ if __name__ == '__main__':
     s2 = Shape(9, 'red')
     # we may try to use a __ property (we should avoid this from happening)
     # this is permitted unless we declare the __slots__ of this class
-    s1.__colour = 'cerise' # here we are assigning an additional arbitrary property to the s1 instance
-    print(s1.__colour) # oops
-    print(s1.colour)
+    # s1.__colour = 'cerise' # here we are assigning an additional arbitrary property to the s1 instance
+    # print(s1.__colour) # oops
+    # print(s1.colour)
+
+    # In Python, the assumption is you may always do whatever you wish
+    # so if you REALLY need to access a mangled property, you can
+    print(s1._Shape__colour) # NB we would never choose to do this in production code
