@@ -20,7 +20,7 @@ if __name__ == '__main__':
     w2 = Word('Hello')
     print(w1 == w2) # this will invoke the __eq__ method
 
-    # __ne__ not equal
+# __ne__ not equal
 # __gt__ greater than
 # __lt__ less than
 # __ge__ and __le__ greater-or-equal and less-or-equal
