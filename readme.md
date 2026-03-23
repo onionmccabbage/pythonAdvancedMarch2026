@@ -23,24 +23,24 @@ https://sites.neueda.com/lm_ericsson_advanced_python/site/index.html
 
 
 Monday
-- intro and welcome
+intro and welcome
   - what you currently know
   - what you want to know 
-- abstract and concrete classes
-- class inheritance
-- using slots
-- Anything __nnn__ is a built in feature of Python. Called 'dunder'
-- name-mangled members
-- can we actually access __nnn properties
-- property decorators
-- validate data types: isinstance, type, int(float())
-- override built-in methods: __str__, __repr__, __eq__ etc.
-- if __name__== '__main__'
-- how to load a relative file path
-- using sys.path
-- after lunch review: build class(es) with properties and methods
-- functional programming: map, filter and reduce  
-- function parameters: args, kwargs
+abstract and concrete classes
+class inheritance
+using slots
+Anything __nnn__ is a built in feature of Python. Called 'dunder'
+name-mangled members
+can we actually access __nnn properties
+property decorators
+validate data types: isinstance, type, int(float())
+override built-in methods: __str__, __repr__, __eq__ etc.
+if __name__== '__main__'
+how to load a relative file path
+using sys.path
+after lunch review: build class(es) with properties and methods
+functional programming: map, filter and reduce  
+function parameters: args, kwargs
 
 Tuesday
 - how to accessing the recordings
