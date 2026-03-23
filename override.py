@@ -11,7 +11,8 @@ class Rectangle(Shape):
     def __init__(self, colour):
         # we often call the __init__ of the parent class
         # we may do this by calling super() and NOT provining self
-        super().__init__(4, colour) # pass a fixed value for num_sides
+        # super().__init__(4, colour) # pass a fixed value for num_sides
+        Shape.__init__(self, 4, colour) # we call the __init__ of Shape
     # we need to ensure the num_sdes remains fixed at 4 (for any Rectangle)
     @property
     def num_sides(self):
