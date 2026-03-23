@@ -13,11 +13,14 @@ Python code lives in classes (or in functions), in modules, which live in packag
 
 *  9:30 start
 * 11:00 break (15 mins)
-* 12:30 lunch (1 hr)
+* 12:00 lunch (1 hr)
 * 3:00 break (15 minutes)
 *  4:30 end
 
 Course Repo https://github.com/onionmccabbage/pythonAdvancedMarch2026
+
+https://sites.neueda.com/lm_ericsson_advanced_python/site/index.html
+
 
 Monday
 - intro and welcome
@@ -105,3 +108,4 @@ where to go from here:
 - work through the tutorials and exercises learnpython.org and pynative
 
 End of course feedback 
+https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/aa0e964e-7577-460f-b4a1-2f2290d1eb07
