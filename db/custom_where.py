@@ -7,7 +7,7 @@ def customRead(w):
     st = f'''
     SELECT creature, count, cost
     FROM zoo
-    WHERE creature = '{w}'
+    WHERE creature LIKE '%{w}%'
 '''
     try:
         curs.execute(st)
@@ -16,12 +16,12 @@ def customRead(w):
         return rows
     except Exception as err:
         print(err)
-
-
     conn.close() # rememer to tidy up
-
 
 if __name__ == '__main__':
     w = input('Which creature: ')
     results = customRead(w)
     print(results) # we have a list
+    # we may choose to iterate over the resulting list collection
+    for _ in results:
+        print(f'We have {_[1]} {_[0]} each costing {_[2]}  ')
