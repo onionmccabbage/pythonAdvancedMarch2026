@@ -12,7 +12,7 @@ class APIAccess():
             # request all the photos as JSON
             # NB this is asynchronous, but the requsts library will wait
             # this is an example of I/O bound code
-            response = requests.get(f'{self.apiURL}/photos')
+            response = requests.post(f'{self.apiURL}/photos')
             # grab the data from the response object
             data = response.json() # or .raw() etc.
             # NB by default Python will convert plain JSON to a structure (list, dict etc)
