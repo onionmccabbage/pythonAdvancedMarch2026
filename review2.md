@@ -19,6 +19,7 @@ Use the following API to grab a very large number of 'posts':
 * Write a module which will read the JSON data for all the 'posts' from the API url. 
 Then iterate over the retrieved data to populate your new table
 * In another module, ask the user which userId they are interested in. 
+* Remember - inout ALWAYS returns a string, so cast it to an int(float(str))
 Then retrieve and display all the database records for that userId (use a 'WHERE' clause in the SQL)
 (You will need to validate that the userId is a positive integer within bounds)
 CAREFUL - userId is a number, so don't use quotes in the SQL statement
