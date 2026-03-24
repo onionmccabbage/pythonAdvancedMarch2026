@@ -7,11 +7,24 @@ class APIAccess():
     def __init__(self):
         pass
     def getAllData(self):
-        apiURL = ''
+        apiURL = 'https://jsonplaceholder.typicode.com'
+        try:
+            # request all the photos as JSON
+            # NB this is asynchronous, but the requsts library will wait
+            # this is an example of I/O bound code
+            response = requests.get(f'{apiURL}/photos')
+            # grab the data from the response object
+            data = response.json() # or .raw() etc.
+            # NB by default Python will .......
+            return data
+        except Exception as err:
+            print(err)
     def getOneData(self):
         pass
 
 
 if __name__ == '__main__':
     # make instances of our class and use them to grab API data
-    pass
+    a = APIAccess()
+    d = a.getAllData()
+    print(d, type(d))
