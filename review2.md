@@ -4,7 +4,7 @@
 
 This is an opportunity to work with databases
 
-In a new package, write a module to implement a database for 'posts'
+In a new package, write a module to implement a database table for 'posts'
 Use the following API to grab a very large number of 'posts':
   https://jsonplaceholder.typicode.com/posts
 
