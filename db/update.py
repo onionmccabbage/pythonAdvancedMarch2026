@@ -4,7 +4,7 @@ def updateOneItem(w):
     '''implement changes to one row in the db'''
     count=(int(float(w['count'])))
     creature = str(w['creature'])
-    conn = sqlite3.connect()
+    conn = sqlite3.connect('my_db')
     curs = conn.cursor()
     # NB within SQL we use quotes for string-like values but NOT for numeric values
     st = f'''
@@ -12,6 +12,12 @@ def updateOneItem(w):
     SET count={count}
     WHERE creature = '{creature}' 
 '''
+    try:
+        curs.execute(st)
+        conn.commit()
+        conn.close()
+    except Exception as err:
+        print(err)
 
 if __name__ == '__main__':
     whichItem = input('Which creature: ')
