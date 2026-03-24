@@ -52,14 +52,14 @@ loading remote API data (requests)
 - 'with' operator for clean handling of assets
 - how to convert bytes back to string: b'this is bytes'.decode()
 - Remember - in Python EVERYTHING is an OBJECT
-- databases and SQL
+databases and SQL
     see https://wiki.python.org/moin/DatabaseProgramming
-- also useful: add 'sqlite viewer' plugin to VSCode
+also useful: add 'sqlite viewer' plugin to VSCode
 - overview of other db connections
-- see SQL tutorial https://www.w3schools.com/sql/
-- Create, Read and Update (and Delete) - CRUD operations
-- populate db with sample data
-- read and nicely format values from the db
+see SQL tutorial https://www.w3schools.com/sql/
+Create, Read and Update (and Delete) - CRUD operations
+populate db with sample data
+read and nicely format values from the db
 - after lunch review exercise (at least an hour)
 
 Wednesday
