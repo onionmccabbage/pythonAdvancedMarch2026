@@ -47,10 +47,10 @@ end-of-Monday code took another 30 minutes to complete
 how to accessing the recordings
 loading remote API data (requests)
   - pip install request   # or pip3 install requests
-- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
-- processing text/json
-- 'with' operator for clean handling of assets
-- how to convert bytes back to string: b'this is bytes'.decode()
+persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+processing text/json
+'with' operator for clean handling of assets
+how to convert bytes back to string: b'this is bytes'.decode()
 - Remember - in Python EVERYTHING is an OBJECT
 databases and SQL
     see https://wiki.python.org/moin/DatabaseProgramming
