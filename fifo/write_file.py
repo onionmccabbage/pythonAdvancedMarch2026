@@ -27,3 +27,9 @@ def writeBytes(b):
 if __name__ == '__main__':
     '''exercise this module'''
     writeText('some plain text.')
+    # make some byte data
+    b = b'here is some byte data'
+    writeBytes(b)
+    # more byte data
+    c = bytes('coffee', 'UTF8')
+    writeBytes(c)

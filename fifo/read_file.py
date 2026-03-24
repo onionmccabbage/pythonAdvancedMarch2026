@@ -25,3 +25,5 @@ if __name__ == '__main__':
     '''exercise this module'''
     r = readText()
     print(r) # the entire file contents
+    b = readBytes()
+    print(b, type(b))
