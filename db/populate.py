@@ -13,7 +13,7 @@ def populate(creature_tuple):
     for item in creature_tuple:
         try:
             if type(item['creature'])==str and item['creature'] !='':
-                n = item(['creature'])
+                n = item['creature']
             else:
                 raise TypeError('Creature name must be a non empty string')
             if type(item['count'] == int) and item['count'] >= 0:
@@ -30,7 +30,7 @@ def populate(creature_tuple):
 
         except Exception as err:
             print(err)
-        conn.close()
+    conn.close()
 
 if __name__ == '__main__':
     creature_tuple = ( # normally this data would come from an API, a file, a microservcie etc.
