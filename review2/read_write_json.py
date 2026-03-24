@@ -15,6 +15,7 @@ def createJSON(struct):
 def makeStruct(text):
     '''convert text which is JSON into a Python structure'''
     s = json.loads(text) # convert the JSON text into a Python structure
+    return s
 
 def readJSON():
     '''read JSON from a text file'''
@@ -27,5 +28,10 @@ def readJSON():
 
 if __name__ == '__main__':
     '''exercise this module'''
-    results = readJSON()
-    print(results, type(results))
+    my_data = {'main':'eggs', 'side':'salad', 'afters':'pie'}
+    e = createJSON(my_data)
+    print(e, type(e))
+    print( makeStruct(e) ) # convert the JSON back into plain text
+
+    # results = readJSON()
+    # print(results, type(results))
