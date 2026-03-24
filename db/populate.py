@@ -25,7 +25,7 @@ def populate(creature_tuple):
             else:
                 raise TypeError('Creature cost must be float zero or more')
             # here are the lines I missed before lunch!
-            curs.execute(st, (n, cost, count))
+            curs.execute(st, (n, count, cost))
             conn.commit()
 
         except Exception as err:

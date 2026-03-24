@@ -7,7 +7,7 @@ def retrieve():
     # get a cursor
     curs = conn.cursor()
     # write an SQL statement
-    st = 'SELECT creature, cost, count FROM zoo'
+    st = 'SELECT creature, count, cost FROM zoo'
     # execute and commit the SQL    
     try:
         curs.execute(st)
