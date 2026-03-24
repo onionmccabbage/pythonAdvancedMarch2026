@@ -55,12 +55,12 @@ loading remote API data (requests)
 databases and SQL
     see https://wiki.python.org/moin/DatabaseProgramming
 also useful: add 'sqlite viewer' plugin to VSCode
-- overview of other db connections
+overview of other db connections
 see SQL tutorial https://www.w3schools.com/sql/
 Create, Read and Update (and Delete) - CRUD operations
 populate db with sample data
 read and nicely format values from the db
-- after lunch review exercise (at least an hour)
+after lunch review exercise (at least an hour)
 
 Wednesday
 - comprehensions, generators and yield
