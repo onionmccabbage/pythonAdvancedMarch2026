@@ -45,7 +45,7 @@ function parameters: args, kwargs
 Tuesday
 end-of-Monday code took another 30 minutes to complete
 how to accessing the recordings
-- loading remote API data (requests)
+loading remote API data (requests)
   - pip install request   # or pip3 install requests
 - persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 - processing text/json
