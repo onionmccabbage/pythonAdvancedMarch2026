@@ -15,6 +15,7 @@ def createTable():
         conn.close()     # tidy up
     except Exception as err:
         print(err)
+
 if __name__ == '__main__':
     '''exercise this module'''
     createTable() # this will make sure our empty table exists in the db
