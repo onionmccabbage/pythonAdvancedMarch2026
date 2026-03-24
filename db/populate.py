@@ -24,12 +24,13 @@ def populate(creature_tuple):
                 cost = item['cost']
             else:
                 raise TypeError('Creature cost must be float zero or more')
-            
+            # here are the lines I missed before lunch!
+            curs.execute(st, (n, cost, count))
+            conn.commit()
 
-
-            curs.execute(st, (n,))
         except Exception as err:
             print(err)
+        conn.close()
 
 if __name__ == '__main__':
     creature_tuple = ( # normally this data would come from an API, a file, a microservcie etc.
