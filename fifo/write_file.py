@@ -16,8 +16,13 @@ def writeText(t):
     except Exception as err:
         print(err)
 
-def writeBytes():
+def writeBytes(b):
     '''commit some byte data to a file'''
+    try: #                    'a' append 'b' bytes
+        with open('my_bytes', 'ab') as fout:
+            fout.write(b)
+    except Exception as err:
+        print(err)
 
 if __name__ == '__main__':
     '''exercise this module'''

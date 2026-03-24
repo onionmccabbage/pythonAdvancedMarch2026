@@ -14,6 +14,12 @@ def readText():
 
 def readBytes():
     '''retrieve bytes from a file'''
+    try:
+        with open('my_bytes', 'rb') as fin:
+            b = fin.read()
+            return b
+    except Exception as err:
+        print(err)    
 
 if __name__ == '__main__':
     '''exercise this module'''
