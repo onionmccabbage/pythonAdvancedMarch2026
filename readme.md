@@ -51,7 +51,7 @@ persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 processing text/json
 'with' operator for clean handling of assets
 how to convert bytes back to string: b'this is bytes'.decode()
-- Remember - in Python EVERYTHING is an OBJECT
+Remember - in Python EVERYTHING is an OBJECT
 databases and SQL
     see https://wiki.python.org/moin/DatabaseProgramming
 also useful: add 'sqlite viewer' plugin to VSCode
