@@ -8,7 +8,7 @@ def client():
     port_t = ('localhost', 9876)
     client.connect(port_t)
     # send a request to the server
-    msg = 'hello'.encode() # we need ot encode all communication over http(s)
+    msg = 'quit'.encode() # we need ot encode all communication over http(s)
     client.send(msg)
     client.close() # tidy up
 

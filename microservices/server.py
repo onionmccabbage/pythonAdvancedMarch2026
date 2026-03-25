@@ -19,7 +19,7 @@ def server():
         print(f'Server received a request from {addr}')
         buf = client.recv(1024) # only the first 1024 bytes
         print(f'Server received {buf}') # NB the buffer is url-encoded
-        if buf =='quit':
+        if buf == b'quit':
             break # end this while loop
 
 if __name__ == '__main__':
