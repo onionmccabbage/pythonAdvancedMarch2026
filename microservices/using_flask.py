@@ -2,14 +2,12 @@
 # you may need to pip isntall flask
 from flask import Flask
 from flask import render_template # this lets us work with html template files
-import datetime
+import sys
+# modify this next line dpending on your file locations
+sys.path.append('D:\pythonAdvancedMarch2026')
+from using_yield import makeDateTimeStamp
 
-def makeDateTimeStamp():
-    '''Generate date-time stamp representing the moment this generator is invoked'''
-    while True: # careful - this will loop endlessly
-        t = datetime.datetime.now().strftime('%H:%M:%S')
-        # we use the yield keyword to make this function behave as a generator
-        yield t
+ts = makeDateTimeStamp() # we need an instance of the generator
 
 def main():
     '''declare and run a Flask server (a microservice)'''
