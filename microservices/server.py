@@ -9,7 +9,7 @@ def server():
     port_tuple = ('localhost', 9876) # 127.0.0.1
     server.bind(port_tuple) # the server will work over localhost port 9876
     # we may listen for any client request
-    server.listen()
+    server.listen() # backlog defaults to one
     print(f'server is running on {port_tuple[0]}:{port_tuple[1]}')
     running = True
     while running == True: # this is a run-loop
@@ -20,7 +20,10 @@ def server():
         buf = client.recv(1024) # only the first 1024 bytes
         print(f'Server received {buf}') # NB the buffer is url-encoded
         if buf == b'quit':
-            break # end this while loop
+            running = False
+            # or...
+            # break # end this whiles loop
+        
 
 if __name__ == '__main__':
     server() # here we invoke the server

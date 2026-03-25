@@ -8,7 +8,12 @@ def client():
     port_t = ('localhost', 9876)
     client.connect(port_t)
     # send a request to the server
-    msg = 'quit'.encode() # we need ot encode all communication over http(s)
+    # first we check if there are additional system argument variables
+    if len(sys.argv) >1:
+        # we can use these additional arguments to construct a message
+        msg = ( ' '.join(sys.argv[1:]) ).encode()
+    else:
+        msg = 'default'.encode() # we need ot encode all communication over http(s)
     client.send(msg)
     client.close() # tidy up
 
