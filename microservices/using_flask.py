@@ -1,6 +1,7 @@
 # we may use the Flask library for basic web content
 # you may need to pip isntall flask
 from flask import Flask
+from flask import render_template # this lets us work with html template files
 import datetime
 
 def makeDateTimeStamp():
@@ -23,7 +24,21 @@ def main():
     def greet():
         now = ts.__next__()
         return (f'Welcome, the time is {now}')
-    
+    # several routes may end up showing the same content
+    @app.route('/aluminium')
+    @app.route('/aluminum')
+    def al():
+        return 'it is spelled "aluminium" '
+    # we may choose to pass HTML
+    @app.route('/data')
+    def data():
+        ''' we could retrieve some data (db file API etc.)'''
+        response = '<h2>Data Goes Here</h2>'
+        return response
+
+
+
+
     # we call the flask server into being like this
     app.run()
 
