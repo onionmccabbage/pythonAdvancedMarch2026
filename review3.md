@@ -15,9 +15,9 @@ a nicely formatted response about that creature, post or todo
 * Find a way for the client to ask the proxy server to add or update members of the database. 
 (Work on one data-type first, such as creatures, then generalize for the others)
 * **Optionally**, the client can persist server responses as bytefiles. 
-(Write to a byte file very time something happens, maybe use redirection)
+(Write to a byte file every time something happens, maybe use redirection)
 
-### Alternative (instead of the above)
+#### Alternative (instead of the above)
 * In a server, check if the buffer is one of 'users', 'posts', 'todos', 'photos' or 'albums'
 * If so, fetch the relevant data set from the jsonplaceholder REST API and return it to the client.
 (either import your existing 'requests' code or write a module for this)
@@ -37,4 +37,4 @@ Further Options
 but context options could write to a text file or a byte file
 * Send context options in the client request to control how the server streams its output
 
-After tea break there will be a chance to show you code
+Around tea break there will be a chance to show you code
