@@ -75,7 +75,7 @@ immediate-mode Python
   see https://docs.python.org/3/library/doctest.html
   - unittest see https://docs.python.org/3/library/unittest.html
   - pytest see https://docs.pytest.org/
-- after lunch lab exercise
+after lunch lab exercise
 - Flask is a lightweight web server
   (django is a full-fat web server)
 
