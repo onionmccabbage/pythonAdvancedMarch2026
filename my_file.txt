@@ -9,3 +9,6 @@ some plain text.
 some plain text.
 some plain text.
 some plain text.
+this text will be redirected to the file
+this text will be redirected to the file
+this text will be redirected to the file
