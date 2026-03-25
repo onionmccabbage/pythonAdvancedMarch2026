@@ -71,7 +71,7 @@ context manager to switch context e.g. for handling data input and output
 networking server/client (microservices)
 immediate-mode Python
 - Testing: (only really works if there is a good spec')
-  - doctest revisited
+doctest revisited
   see https://docs.python.org/3/library/doctest.html
   - unittest see https://docs.python.org/3/library/unittest.html
   - pytest see https://docs.pytest.org/
