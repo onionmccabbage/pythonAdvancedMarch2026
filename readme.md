@@ -110,4 +110,6 @@ where to go from here:
 - work through the tutorials and exercises learnpython.org and pynative
 
 End of course feedback 
+https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZPS191140&OID=411120&Title=Product%20Development%20Leadership%20Program&Owner=Naveen%20Kumar%20E%20(EXT)
+
 https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/aa0e964e-7577-460f-b4a1-2f2290d1eb07
