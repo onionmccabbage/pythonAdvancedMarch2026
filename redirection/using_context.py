@@ -19,4 +19,5 @@ if __name__ == '__main__':
         with outputRedirect(fobj):
             print('this ends up written into the file')
             sys.stdout.write('...other file content')
+        # at the end of the with block, the asset is closed and made available for garbage collection
     print('back to the console')

@@ -1,0 +1,1 @@
+# this is a client for our microservices server. All interactions happen over http(s)
