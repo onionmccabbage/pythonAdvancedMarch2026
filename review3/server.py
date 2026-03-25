@@ -71,6 +71,8 @@ def server():
             (cat, id) = received.split('/')
             r = getData(cat, id)
             message = f'{r}'.encode()
+            print(f'Message: {message}')
+            writeTofile((f'{message}\n').encode())
            
         elif received=='date':
             message = datetime.now()
@@ -79,7 +81,7 @@ def server():
             message = datetime.now().strftime("%H:%M:%S").encode()
         else:
             message = received.upper().encode()
-        # client.send( message )
+        client.send( message )
         client.close()
         # if the client sends b'quit' then we will close the server
         if buf == b'quit':

@@ -1,6 +1,7 @@
 # we can build a socket client
 import socket
 import sys
+import time
 
 def client():
     '''this is a basic socket client to interact with our socket server'''
@@ -22,9 +23,6 @@ def client():
     else:
         message = 'default message'
     client.send( message.encode() )
-    # if anything comes back from the server, handle it here
-    # data = client.recv(1024)
-    # print(f'Client received {data}')
     client.close()
 
 if __name__ == '__main__':
