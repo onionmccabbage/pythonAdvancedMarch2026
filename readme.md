@@ -63,13 +63,13 @@ read and nicely format values from the db
 after lunch review exercise (at least an hour)
 
 Wednesday
-- comprehensions, generators and yield
+comprehensions, generators and yield
 i/o bound means any program which relies on external assets (print, input....)
 python includes stdin and stdout
 redirect stdout
 context manager to switch context e.g. for handling data input and output
 networking server/client (microservices)
-- immediate-mode Python
+immediate-mode Python
 - Testing: (only really works if there is a good spec')
   - doctest revisited
   see https://docs.python.org/3/library/doctest.html
