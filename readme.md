@@ -74,16 +74,13 @@ immediate-mode Python
 doctest revisited
   see https://docs.python.org/3/library/doctest.html
   - unittest see https://docs.python.org/3/library/unittest.html
-  - pytest see https://docs.pytest.org/
+pytest see https://docs.pytest.org/
 after lunch lab exercise
-- Flask is a lightweight web server
-  (django is a full-fat web server)
+Flask is a lightweight web server
+(django is a full-fat web server)
 
 Thursday
-- profiling: timings etc. (cProfile)
-  to use cProfile we write this:
-     python -m cProfile -o prof_out using_api.py
-- debug
+- revisit relative path imports (e.g. for our Flask example)
 - classes include several really useful methods we may override:
   __init__, __str__, __repr__, __enter__, __exit__, __run__, __call__
 - multithreading, also limits of mutlithreading concurrency
@@ -97,6 +94,10 @@ Thursday
   see https://peps.python.org/pep-0703/
 - using thread locks
 - Python has -O to optimize code (especially useful for threading and large code-base)
+- profiling: timings etc. (cProfile)
+  to use cProfile we write this:
+     python -m cProfile -o prof_out using_api.py
+- debug
 - after lunch review
 - async server and client for microservices
 - Numpy and Pandas are written in c so they avoid the GIL
