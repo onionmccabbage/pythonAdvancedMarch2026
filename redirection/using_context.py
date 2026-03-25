@@ -14,8 +14,9 @@ if __name__ == '__main__':
     # exercise this module
     sys.stdout.write('this is a fancy way to print stuff to the console')
     # 'a' will append, 'w' will (over)write i.e. repalce the file content
+    #                          'x' for exclusive access (fails if the file already exists)
     with open('my_stream.txt', 'w') as fobj:
         with outputRedirect(fobj):
             print('this ends up written into the file')
-            sys.stdout.write('...more file content')
+            sys.stdout.write('...other file content')
     print('back to the console')
