@@ -35,9 +35,10 @@ def main():
         ''' we could retrieve some data (db file API etc.)'''
         response = '<h2>Data Goes Here</h2>'
         return response
-
-
-
+    @app.route('/demo')
+    @app.route('/demo/<person>') # here we might expect an argument
+    def demo(person='Ethel'):
+        return render_template('demo.html', person=person)
 
     # we call the flask server into being like this
     app.run()
