@@ -44,7 +44,7 @@ function parameters: args, kwargs
 
 Tuesday
 end-of-Monday code took another 30 minutes to complete
-how to accessing the recordings
+how to accessing the recordings: username: student password: Belfast2024
 loading remote API data (requests)
   - pip install request   # or pip3 install requests
 persisting files: read/write/append/exclusive/overwrite, text, bytes, json
@@ -80,7 +80,7 @@ Flask is a lightweight web server
 (django is a full-fat web server)
 
 Thursday
-- revisit relative path imports (e.g. for our Flask example)
+revisit relative path imports (e.g. for our Flask example)
 - classes include several really useful methods we may override:
   __init__, __str__, __repr__, __enter__, __exit__, __run__, __call__
 - multithreading, also limits of mutlithreading concurrency
