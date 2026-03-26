@@ -8,16 +8,20 @@ lock = Lock()
 def fnA():
     '''increment the count to 100'''
     global count
+    lock.acquire()
     while count <100:
         count += 1
         print(f'A increments to {count}') 
+    lock.release()
 
 def fnB():
     '''decremnt the count to -100'''
     global count
+    lock.acquire()
     while count >-100:
         count -= 1
         print(f'B decrements to {count}') 
+    lock.release()
 
 if __name__ == '__main__':
     tA = Thread(target=fnA)
