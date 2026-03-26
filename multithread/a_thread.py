@@ -16,11 +16,27 @@ if __name__ == '__main__':
     tC = Thread(target=fn, args=(3,) ) # here is a new Thread instance (a Thread of control)
     tD = Thread(target=fn, args=(4,) ) # here is a new Thread instance (a Thread of control)
 
+    # we may use a simple timing check to measure performance
+    start = time.time()
+
     # we may start our additional threads
     tC.start()
     tA.start()
     tB.start()
-    tD.start()
+    tD.start() # if we start additional threads, they run concurrently and do not block the main thread
+
+    # we may choose to wait until the additonal threads have finished
+    tA.join() # this will cause the main thread to wait - i.e. it is blocking
+    tB.join()
+    tC.join()
+    tD.join()
+
+    # also write code on the main htread
+    end = time.time()
+    print(f'main thread. Total time: {end-start}')
+
+
+
     # remember, in normal operation the function must run consecutively
     # fn(9) # invoke the function on the main thread
     # fn(8)
