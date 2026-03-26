@@ -87,18 +87,19 @@ multithreading, also limits of mutlithreading concurrency
 class and function threads
   - how threads are done
 concurrency and resources (lock shared resources)
-  - async await
+async await
 in Python we do not get true parallelism ...
 the global Interpreter Lock (GIL)
 Python 3.13 contains an optional GIL
   see https://peps.python.org/pep-0703/
 using thread locks
-- Python has -O to optimize code (especially useful for threading and large code-base)
+Python has -O to optimize code 
+(especially useful for threading and large code-base)
 - profiling: timings etc. (cProfile)
   to use cProfile we write this:
      python -m cProfile -o prof_out using_api.py
-- debug
-- after lunch review
+debug
+after lunch review
 async (Py3.12+) server and client for microservices
 - Numpy and Pandas are written in c so they avoid the GIL
 - the next course covers:
