@@ -42,3 +42,16 @@ class TestRunner(threading.Thread):
 if __name__ == '__main__':
     '''exercise this module'''
     lock = threading.Lock()
+    runners_list = []
+    for _ in range(0, numthreads):
+        runner = TestRunner(lock)
+        runners_list.append(runner)
+    start = timeit.default_timer()
+    # start all the threads
+    for _ in runners_list:
+        _.start()
+    # join all the threads
+    for _ in runners_list:
+        _.join()
+    end = timeit.default_timer()
+    print(f'Total time: {end-start}')
