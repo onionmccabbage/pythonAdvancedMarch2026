@@ -83,16 +83,16 @@ Thursday
 revisit relative path imports (e.g. for our Flask example)
 - classes include several really useful methods we may override:
   __init__, __str__, __repr__, __enter__, __exit__, __run__, __call__
-- multithreading, also limits of mutlithreading concurrency
-  - class and function threads
+multithreading, also limits of mutlithreading concurrency
+class and function threads
   - how threads are done
-  - concurrency and resources (lock shared resources)
+concurrency and resources (lock shared resources)
   - async await
-  in Python we do not get true parallelism ...
-- the global Interpreter Lock (GIL)
-- Python 3.13 contains an optional GIL
+in Python we do not get true parallelism ...
+the global Interpreter Lock (GIL)
+Python 3.13 contains an optional GIL
   see https://peps.python.org/pep-0703/
-- using thread locks
+using thread locks
 - Python has -O to optimize code (especially useful for threading and large code-base)
 - profiling: timings etc. (cProfile)
   to use cProfile we write this:

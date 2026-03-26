@@ -2,7 +2,7 @@ from threading import Thread
 from threading import Lock
 
 # here are sme global assets
-count = 0
+count = 0 # this could be some valuable data access mechanism
 lock = Lock()
 
 def fnA():
@@ -26,7 +26,7 @@ def fnB():
 if __name__ == '__main__':
     tA = Thread(target=fnA)
     tB = Thread(target=fnB)
+    tB.start() # whichever thread starts first will have first access to the lock
     tA.start()
-    tB.start()
     tA.join()
     tB.join()
