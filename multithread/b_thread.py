@@ -14,6 +14,7 @@ class MyClass(Thread):
     def run(self):
         '''When this class is invoked the run method is called'''
         for _ in range(0,4):
+            # NB print MUST access the main thread. it is I/O bound
             print(f'{self.n} is sleeping')
             time.sleep(random.random()*self.x)
 
