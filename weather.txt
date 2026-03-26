@@ -1,0 +1,7 @@
+The weather in Paris is scattered clouds at 10.32C
+The weather in London is overcast clouds at 10.2C
+The weather in Munich is moderate rain at 3.91C
+The weather in Dublin is clear sky at 10.1C
+The weather in Kingston is scattered clouds at 28.53C
+The weather in Athlone is overcast clouds at 8.59C
+The weather in Genoa is clear sky at 13.68C

@@ -26,7 +26,7 @@ def main():
     '''
     use the Weather class to create instances of weather reports
     '''
-    city_t = ('London', 'Paris', 'Munich', 'Dublin')
+    city_t = ('London', 'Paris', 'Munich', 'Dublin', 'Genoa', 'Athlone', 'Kingston')
     # get the default weather (for Athlone)
     # buildWeatherInstance()
     # if system argument was provided, use it for the city
