@@ -1,9 +1,13 @@
 ### Advanced Python Review 4 
 
+one hour (until tea break at 3:00)
+
+
 - Alter these instructions to suit your thinking
 - Aim for good architecture (maybe use separate modules)
 - Look online, talk to each other, ask me etc.
 - There will be an opportunity to share your code
+- If you wish, try async programming
 
 * Write a 'Weather' class with get/set methods for 'city' and 'description'
 * In a separate thread (e.g. another class or function), use the 'requests' library to get data from
