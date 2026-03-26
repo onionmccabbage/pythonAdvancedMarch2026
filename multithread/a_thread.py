@@ -1,5 +1,7 @@
 from threading import Thread
 import time
+# a more accurate tool to measure the passage of time is timeit
+import timeit # does a good job of ignoring non-python operations
 
 # every additional thread shares the same instance of Python
 
@@ -17,7 +19,7 @@ if __name__ == '__main__':
     tD = Thread(target=fn, args=(4,) ) # here is a new Thread instance (a Thread of control)
 
     # we may use a simple timing check to measure performance
-    start = time.time()
+    start = timeit.default_timer()
 
     # we may start our additional threads
     tC.start()
@@ -32,7 +34,7 @@ if __name__ == '__main__':
     tD.join()
 
     # also write code on the main htread
-    end = time.time()
+    end = timeit.default_timer()
     print(f'main thread. Total time: {end-start}')
 
 
