@@ -99,7 +99,7 @@ using thread locks
      python -m cProfile -o prof_out using_api.py
 - debug
 - after lunch review
-- async server and client for microservices
+- async (Py3.12+) server and client for microservices
 - Numpy and Pandas are written in c so they avoid the GIL
 - the next course covers:
   - design patterns
