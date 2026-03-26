@@ -1,4 +1,5 @@
 import asyncio
+import sys
 
 async def myClient(message='default'):
     reader, writer = await asyncio.open_connection('localhost', 9876)
@@ -8,4 +9,8 @@ async def myClient(message='default'):
     writer.close()
 
 if __name__ == '__main__':
-    asyncio.run( myClient() )
+    if len(sys.argv)>1:
+        msg = ' '.join(sys.argv[1:])
+    else:
+        msg = 'hello'
+    asyncio.run( myClient(msg) )
