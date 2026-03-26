@@ -70,7 +70,7 @@ redirect stdout
 context manager to switch context e.g. for handling data input and output
 networking server/client (microservices)
 immediate-mode Python
-- Testing: (only really works if there is a good spec')
+Testing: (only really works if there is a good spec')
 doctest revisited
   see https://docs.python.org/3/library/doctest.html
   - unittest see https://docs.python.org/3/library/unittest.html
@@ -81,8 +81,8 @@ Flask is a lightweight web server
 
 Thursday
 revisit relative path imports (e.g. for our Flask example)
-- classes include several really useful methods we may override:
-  __init__, __str__, __repr__, __enter__, __exit__, __run__, __call__
+classes include several really useful methods we may override:
+  __init__, __str__, __repr__, __enter__, __exit__, run, __call__
 multithreading, also limits of mutlithreading concurrency
 class and function threads
   - how threads are done
@@ -95,23 +95,26 @@ Python 3.13 contains an optional GIL
 using thread locks
 Python has -O to optimize code 
 (especially useful for threading and large code-base)
-- profiling: timings etc. (cProfile)
-  to use cProfile we write this:
-     python -m cProfile -o prof_out using_api.py
+profiling: timings etc. (cProfile)
+to use cProfile we write this:
+  python -m cProfile -o prof_out using_api.py
 debug
 after lunch review
 async (Py3.12+) server and client for microservices
-- Numpy and Pandas are written in c so they avoid the GIL
-- the next course covers:
+Numpy and Pandas are written in c so they avoid the GIL
+the next course covers:
   - design patterns
   - extend threading and also multiprocessing
-  - Numpy, Pandas and Data Analysis
+  - Numpy, Pandas and Data Analysis (jupyter)
 
 where to go from here:
-- use Python
-- work through the tutorials and exercises learnpython.org and pynative
+use Python regularly
+work through the tutorials and exercises learnpython.org and pynative.com
 
 End of course feedback 
-https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZPS191140&OID=411120&Title=Product%20Development%20Leadership%20Program&Owner=Naveen%20Kumar%20E%20(EXT)
+
+There will be an internal feedback mechanism (via QR code)
+(probably via email)
+We value you feedback response - please take time to complete
 
 https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/aa0e964e-7577-460f-b4a1-2f2290d1eb07
