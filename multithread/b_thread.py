@@ -19,3 +19,15 @@ class MyClass(Thread):
 
 if __name__ == '__main__':
     '''use our class as threads'''
+    tA = MyClass('A', 1)
+    tB = MyClass('B', 2)
+    tC = MyClass('C', 0.5)
+    start = timeit.default_timer()
+    tA.start()
+    tB.start()
+    tC.start()
+    tA.join()
+    tB.join()
+    tC.join()
+    end = timeit.default_timer()
+    print(f'Total time {end-start}')
