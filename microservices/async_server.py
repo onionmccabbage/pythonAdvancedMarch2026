@@ -1,0 +1,17 @@
+import asyncio
+
+async def handleRequests(reader, writer):
+    data = await reader.read(1024)
+    message = data.decode()
+    addr = writer.get_extra_info('peername')
+    print(f'Server received {message} from {addr}')
+    writer.close()
+
+async def main():
+    server = await asyncio.start_server(handleRequests, 'localhost', 9876)
+    print('server started')
+    async with server:
+        await server.serve_forever()
+
+if __name__ == '__main__':
+    asyncio.run( main() )
