@@ -17,7 +17,7 @@ if __name__ == '__main__':
     sc = SimpleClass() 
     # we may need to work with very many threads
     thread_list = []
-    for _ in range(0,8):
+    for _ in range(0,512):
         thread_list.append( Thread(target=sc, args=(_,)) )
     start = timeit.default_timer()
     for _ in thread_list:
