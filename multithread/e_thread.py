@@ -7,7 +7,7 @@ import random
 
 # some global assets
 testAvailable = []
-numthreads    = 16
+numthreads    = 1024
 for _ in range(0,1000):
     t = {'id':_, 'kind':'Python'}
     testAvailable.append(t)
@@ -37,7 +37,7 @@ class TestRunner(threading.Thread):
                 running = False
             self.lock.release()
             # we might report the status
-            print(f'Task {self.n} ran {self.test_count} tests')
+            # print(f'Task {self.n} ran {self.test_count} tests')
     def randomDelay(self):
         '''pause execution for a short random time'''
         time.sleep(random.randint(0,4)/4) # 0, 0.25, 0.5, 0.75, 1.0
