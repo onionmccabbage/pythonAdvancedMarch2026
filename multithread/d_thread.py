@@ -14,7 +14,7 @@ def fnA():
 
 def fnB():
     '''decremnt the count to -100'''
-    count
+    global count
     while count >-100:
         count -= 1
         print(f'B decrements to {count}') 
