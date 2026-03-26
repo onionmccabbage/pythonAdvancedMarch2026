@@ -8,19 +8,20 @@ import random
 # some global assets
 testAvailable = []
 numthreads    = 16
-for _ in range(0,100):
+for _ in range(0,1000):
     t = {'id':_, 'kind':'Python'}
     testAvailable.append(t)
 
 # a class (inheriting from Thread)
 class TestRunner(threading.Thread):
-    '''Ech intance of this class will be executed on a worker thread
+    '''Each intance of this class will be executed on a worker thread
     to run one of a finite collection of tests (or other assets)'''
     tests_completed = 0 # this belongs to the class
-    def __init__(self, lock):
+    def __init__(self, lock, n):
         threading.Thread.__init__(self)
         self.lock = lock
         self.test_count = 0 # how many tests has this instance executed
+        self.n = n
     def run(self):
         global testAvailable
         running = True
@@ -35,6 +36,8 @@ class TestRunner(threading.Thread):
             else:
                 running = False
             self.lock.release()
+            # we might report the status
+            print(f'Task {self.n} ran {self.test_count} tests')
     def randomDelay(self):
         '''pause execution for a short random time'''
         time.sleep(random.randint(0,4)/4) # 0, 0.25, 0.5, 0.75, 1.0
@@ -44,7 +47,7 @@ if __name__ == '__main__':
     lock = threading.Lock()
     runners_list = []
     for _ in range(0, numthreads):
-        runner = TestRunner(lock)
+        runner = TestRunner(lock, _)
         runners_list.append(runner)
     start = timeit.default_timer()
     # start all the threads
